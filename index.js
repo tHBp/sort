@@ -1,3 +1,12 @@
+'use strict';
+
+/**
+ * Sorts and returns an array.
+ * @param {array} data
+ * @param {array/string} sortBy
+ * @param {array/string} order
+ * @return {array}
+ */
 module.exports = function(data, sortBy, order) {
     if (!(data && sortBy)) {
         throw new Error('Specify the data source and atleast one property to sort it by');
