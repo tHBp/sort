@@ -1,0 +1,24 @@
+{
+  "name": "objectarray-sort",
+  "version": "1.0.0",
+  "description": "A tiny library to sort array of objects based on multiple properties",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tHBp/sort.git"
+  },
+  "keywords": [
+    "array",
+    "sort",
+    "objects"
+  ],
+  "author": "tHBp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tHBp/sort/issues"
+  },
+  "homepage": "https://github.com/tHBp/sort#readme"
+}
