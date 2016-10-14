@@ -1,12 +1,16 @@
 # sort  [![Build Status](https://travis-ci.org/tHBp/sort.svg?branch=master)](https://travis-ci.org/tHBp/sort)
 
-A tiny library to sort array of objects based on multiple properties. <br>Ultra small, just `0.45KB` min+gzipped (`1.8KB` uncompressed debug source).
+A tiny library to sort array of objects based on multiple properties. <br>Ultra small, just `0.50KB` [minified+gzipped] and `2.25KB` [uncompressed source].
 
-## Install
+## Getting Started
 
+If you are using npm
 ```
 $ npm install --save objectarray-sort
 ```
+or include `index.js` manually as<br>
+
+`<script src="index.js" charset="utf-8"></script>`
 
 ## Usage
 
@@ -16,6 +20,11 @@ const sort = require('objectarray-sort');
 sort([{a:{b:2}},{a:{b:6}},{a:{b:1}}], 'a.b');
 
 sort(test, ['a.b', 'a.c.d', 'a.e.f.g'], ['desc', 'asc', 'desc']);
+```
+For browser environments, the library exports a global `arraySort`, which can be used in a similar fashion,
+```js
+arraySort(test, ['a.b', 'a.c', 'a.d'], ['desc', 'asc', 'desc']);
+// returns the sorted 'test' array
 ```
 
 ## API
