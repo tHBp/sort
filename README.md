@@ -15,7 +15,7 @@ const sort = require('objectarray-sort');
 
 sort([{a:{b:2}},{a:{b:6}},{a:{b:1}}], 'a.b');
 
-sort(test, ['a.b', 'a.c', 'a.d'], ['desc', 'asc', 'desc']);
+sort(test, ['a.b', 'a.c.d', 'a.e.f.g'], ['desc', 'asc', 'desc']);
 ```
 
 ## API
@@ -40,7 +40,7 @@ Default: none
 The property against which sorting is to be performed. A single string value or array of strings.
 
 
-#### sortBy
+#### order
 
 Type: `String | Array`<br>
 Default: `'asc'`
