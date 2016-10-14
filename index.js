@@ -46,7 +46,9 @@ module.exports = function(data, sortBy, order) {
         if (latestValue === undefined) {
             throw new Error('Check the \'sortBy\' parameter. Unreachable property passed in \'sortBy\'');
         }
-        if (typeof latestValue === 'string') {
+        if (typeof latestValue === 'string' && latestValue.match(/^\d{4}(-\d\d(-\d\d(T\d\d:\d\d(:\d\d)?(\.\d+)?(([+-]\d\d:\d\d)|Z)?)?)?)?$/i)) {
+            return new Date(latestValue);
+        } else if (typeof latestValue === 'string') {
             return latestValue.toLowerCase();
         } else if (typeof latestValue === 'boolean') {
             return latestValue.toString();
