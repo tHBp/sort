@@ -1,6 +1,6 @@
-# sort  [![Build Status](https://travis-ci.org/tHBp/sort.svg?branch=master)](https://travis-ci.org/tHBp/sort) [![Inline docs](http://inch-ci.org/github/tHBp/sort.svg?branch=master&style=flat-square)](http://inch-ci.org/github/tHBp/sort)
+# sort  [![Build Status](https://travis-ci.org/tHBp/sort.svg?branch=master)](https://travis-ci.org/tHBp/sort)
 
-A tiny library to sort array of objects based on multiple properties. <br>Really small, just `547 bytes` gzipped (`1.62KB` uncompressed).
+A tiny library to sort array of objects based on multiple properties. <br>Ultra small, just `0.45KB` min+gzipped (`1.8KB` uncompressed debug source).
 
 ## Install
 
