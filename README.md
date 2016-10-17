@@ -47,6 +47,7 @@ Type: `String | Array`<br>
 Default: none
 
 The property against which sorting is to be performed. A single string value or array of strings.
+<br>If an array is passed, the priority of sort is in decreases from left to right. <br>Say, if you pass `['a.b', 'a.c']` as the argument, the function will sort the array based on `'a.b'` first, then for same values of `'a.b'`, it will sort those values by `'a.c'` and so on. <br>By default, all orders are ascending. For changing order, see [order](#order).
 
 
 #### order
@@ -54,5 +55,8 @@ The property against which sorting is to be performed. A single string value or 
 Type: `String | Array`<br>
 Default: `'asc'`
 
-The order which sorting is to be performed. A single string value or array of strings. Values are `'asc'` or `'desc'`.
+The order which sorting is to be performed. A single string value or array of strings. Values are `'asc'` or `'desc'`.<br>
+If it is an array, it maps one to one to the arguments of `sortBy`.
+<br>In the example `sort(test, ['a.b', 'a.c.d', 'a.e.f.g'], ['desc', 'asc', 'desc'])`, `'a.b'` is sorted in descending order, `'a.c.d'` in ascending order and `'a.e.f.g'` in descending order.
+
 Defaults to `'asc'`.
