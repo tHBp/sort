@@ -6,7 +6,7 @@ A tiny library to sort array of objects based on multiple properties. <br>Ultra 
 
 If you are using npm
 ```
-$ npm install --save objectarray-sort
+$ npm install --save sort-object-array
 ```
 or include `index.js` manually as<br>
 

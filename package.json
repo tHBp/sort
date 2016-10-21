@@ -1,6 +1,6 @@
 {
-  "name": "objectarray-sort",
-  "version": "1.0.0",
+  "name": "sort-object-array",
+  "version": "1.0.1",
   "description": "A tiny library to sort array of objects based on multiple properties",
   "main": "index.js",
   "scripts": {
