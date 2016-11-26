@@ -60,3 +60,7 @@ If it is an array, it maps one to one to the arguments of `sortBy`.
 <br>In the example `sort(test, ['a.b', 'a.c.d', 'a.e.f.g'], ['desc', 'asc', 'desc'])`, `'a.b'` is sorted in descending order, `'a.c.d'` in ascending order and `'a.e.f.g'` in descending order.
 
 Defaults to `'asc'`.
+
+## License
+
+MIT © [The Half Blood Prince](mailto://thehalfbloodprince.github@gmail.com)
