@@ -14,12 +14,8 @@
         if (!Array.isArray(data)) {
             throw new Error('Specify the data source as an array');
         }
-        if (!Array.isArray(sortBy)) {
-            sortBy = [sortBy];
-        }
-        if (!Array.isArray(order)) {
-            order = [order];
-        }
+        sortBy = Array.isArray(sortBy) ? sortBy : [sortBy];
+        order = Array.isArray(order) ? order : [order];
 
         function performSort(order, sortBy) {
             return data.sort(function(a, b) {
