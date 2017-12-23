@@ -15,7 +15,7 @@ or include `index.js` manually as<br>
 ## Usage
 
 ```javascript
-const sort = require('objectarray-sort');
+const sort = require('sort-object-array');
 
 sort([{a:{b:2}},{a:{b:6}},{a:{b:1}}], 'a.b');
 
